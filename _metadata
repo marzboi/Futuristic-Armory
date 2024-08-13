@@ -1,11 +1,11 @@
 {
-  "version" : "1",
-  "tags" : "Weapons",
-  "author" : "Trif Mircea (GDIGE)",
-  "description" : "This mod adds weapons from iconic games and movies such as:Alien,Titanfall,COD and more!\nAlso,it adds a new sets of armor and EPPs from Titanfall!\n(sry if my english is bad)\nGuns and armor can be crafted in 3 new \"shops\". You can craft these shops them with pixels.\n\n\nContent wasnt created by me,it was created by GDIGE(https://www.nexusmods.com/starbound/users/3608922) I just imported it in workshop.\n\nCompatible with Frackin Universe\n\nCompatible with 1.3.1\n\n",
+  "author" : "Marz",
+  "description" : "I have take the time to tweak this great mod based on the code by Ravy, and make it use an ammo counter\n\n- It will now use an Ammo Counter rather than energy, shots will not consume energy so you can use techs.\n\nTo Do.\n\n- An UI that displays your ammunition left\n- Proper tags so the weapons can scale with mods like RPG Growth.\n- Research ammo capacity to be lore accurate to the source material",
+  "friendlyName" : "Futuristic Armory - Ammo Counter",
+  "includes" : [],
+  "link" : "steam://url/CommunityFilePage/3308532819",
   "name" : "Futuristic Armory",
-  "friendlyName" : "Futuristic Armory",
-  "steamContentId" : "1556489108",
-  "link" : "steam://url/CommunityFilePage/1556489108",
-  "includes" : []
+  "steamContentId" : "3308532819",
+  "tags" : "Weapons",
+  "version" : "1.0"
 }
