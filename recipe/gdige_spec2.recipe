@@ -1,0 +1,13 @@
+{
+	"input" : [
+    { 
+	"item" : "money", 
+	"count" : 1000
+	}
+	],
+	"output" : {
+		"item" : "gdige_spec2",
+		"count" : 1
+	},
+	"groups" : [ "plain",  "all" ]
+}

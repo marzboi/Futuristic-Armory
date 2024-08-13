@@ -1,0 +1,38 @@
+{
+  "projectileName" : "CAR-S_fastreload_1",
+  "image" : "icon.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "timeToLive" : 0.05,
+  "damageKindImage" : "icon.png",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "gdigeload",
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "new_Cshell",
+      "fuzzAngle" : 20,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "CAR-Smag",
+      "angle" : -90
+    },
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/CAR-Sreload.ogg"
+      ]
+    }
+  ],
+  "power" : 0,
+  "speed" : 10,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

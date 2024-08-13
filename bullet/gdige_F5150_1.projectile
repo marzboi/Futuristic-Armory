@@ -1,0 +1,34 @@
+{
+  "projectileName" : "gdige_F5150_1",
+  "image" : "/bullet/icon.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "pointLight" : true,
+  "lightColor" : [150,230,127],  
+  "timeToLive" : 0.0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "bullet3_gdige",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "new_shellF",
+      "inheritDamageFactor" : 0,
+      "fuzzAngle" : 90,
+      "directional" : "true"
+    },
+    {
+      "action" : "sound",
+      "options" : ["/sfx/F5150.ogg"]
+    }
+  ],
+  "power" : 0,
+  "speed" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

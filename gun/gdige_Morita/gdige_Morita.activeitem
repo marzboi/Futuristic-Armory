@@ -1,0 +1,263 @@
+{
+  "itemName" : "gdige_Morita",
+  "price" : 8000,
+  "inventoryIcon" : "gdige_Morita.png:default.1",
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "level" : 7,
+  "shortdescription" : "^green;Morita Carbine",
+  "category" : "^yellow;RMB : ^white;Reload",
+
+  "description" : "^yellow;9×19mm ^white;Assault Rifle
+^orange;Triflabs^white;
+Medium weight",
+
+  "itemTags" : ["weapon","ranged","supply"],
+  "twoHanded" : true,
+
+  "animation" : "gdige_Morita.animation",
+  "animationParts" : {
+    "middle" : "gdige_Morita.png",
+    "middle2" : "gdige_Moritafullbright.png",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+  },
+
+  "baseOffset" : [0.95, 0.45],
+  "muzzleOffset" : [-3.5, 0.4],
+
+  "scripts" : ["/gun/normal.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/gun/gunshopgunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.09,
+    "baseDps" : 18,
+    "energyUsage" : 20,
+    "inaccuracy" : 0.02,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "gdige_Morita_1",
+    "projectileParameters" : {
+      "speed" : 75
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 10,
+        "weaponRotation" : -10,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0.0,
+        "armRotation" : 10,
+        "weaponRotation" : -10,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0.0],
+        "twoHanded" : true,
+
+        "animationStates" : {
+          "body" : "reload"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "rotation"
+      },
+      "motion1" : {
+        "duration" : 0.02,
+        "armRotation" : 10,
+        "weaponRotation" : -10,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "rotation",
+		"recoil" : true
+      },
+      "motion2" : {
+      },
+      "motion3" : {
+      },
+      "motion4" : {
+      },
+      "motion5" : {
+      },
+      "motion6" : {
+      },
+      "cooldown" : {
+        "duration" : 0.005,
+        "armRotation" : 12,
+        "weaponRotation" : -12,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "rotation",
+		"recoil" : true
+      }
+    }
+  },
+
+  "altAbility" : {
+    "scripts" : ["/gun/gunshopaltfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.5,
+    "baseDps" : 1,
+    "energyUsage" : 0,
+    "inaccuracy" : 0.01,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "Morita_fastreload_1",
+    "projectileParameters" : {
+      "speed" : 20
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 10,
+        "weaponRotation" : -10,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0.0,
+        "armRotation" : 10,
+        "weaponRotation" : -10,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [0.0, 0.0],
+        "twoHanded" : true,
+
+        "animationStates" : {
+          "body" : "fastreload"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "run.2",
+        "backArmFrame" : "rotation"
+      },
+      "motion1" : {
+        "duration" : 0.1,
+        "armRotation" : 10,
+        "weaponRotation" : -10,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.6, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.3",
+        "backArmFrame" : "rotation"
+      },
+      "motion2" : {
+        "duration" : 0.2,
+        "armRotation" : 10,
+        "weaponRotation" : 5,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.6, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swim.5",
+        "backArmFrame" : "rotation"
+      },
+      "motion3" : {
+        "duration" : 0.6,
+        "armRotation" : 20,
+        "weaponRotation" : 90,
+        "weaponRotationCenter" : [-0.5, 0.0],
+        "weaponOffset" : [-0.2, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "run.2",
+        "backArmFrame" : "rotation"
+      },
+      "motion4" : {
+        "duration" : 0.1,
+        "armRotation" : 10,
+        "weaponRotation" : 5,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.6, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swim.5",
+        "backArmFrame" : "rotation"
+      },
+      "motion5" : {
+        "duration" : 0.2,
+        "armRotation" : 10,
+        "weaponRotation" : 5,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.6, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.3",
+        "backArmFrame" : "rotation"
+      },
+      "motion6" : {
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 10,
+        "weaponRotation" : 5,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.6, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "rotation"
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

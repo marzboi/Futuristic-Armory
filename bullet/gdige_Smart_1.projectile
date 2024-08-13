@@ -1,0 +1,34 @@
+{
+  "projectileName" : "gdige_Smart_1",
+  "image" : "/bullet/icon.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "pointLight" : true,
+  "lightColor" : [71, 134, 255],  
+  "timeToLive" : 0.0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "bullet2_gdige",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "new_case",
+      "inheritDamageFactor" : 0,
+      "fuzzAngle" : 110,
+      "directional" : "true"
+    },
+    {
+      "action" : "sound",
+      "options" : ["/sfx/Smart.ogg"]
+    }
+  ],
+  "power" : 0,
+  "speed" : 0,
+  "damageType" : "IgnoresDef",
+  "damageKind" : "electric"
+}

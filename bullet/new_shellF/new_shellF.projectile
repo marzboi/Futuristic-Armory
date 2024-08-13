@@ -1,0 +1,23 @@
+{
+  "projectileName" : "new_shellF",
+  "image" : "new_shellF.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "physics" : "grenade",
+  "piercing" : true,
+  "bounces" : 0,
+  "speed" : 10,
+  "timeToLive" : 1,
+  "damageKindImage" : "icon.png",
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "new_shellF2",
+      "fuzzAngle" : 360
+    }
+  ]
+}

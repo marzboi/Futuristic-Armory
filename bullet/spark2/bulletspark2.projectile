@@ -1,0 +1,19 @@
+{
+  "projectileName" : "bulletspark2",
+  "image" : "bulletspark2.png",
+  "animationCycle" : 0.4,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "onlyHitTerrain" : true,
+  "frameNumber" : 8,
+  "pointLight" : true,
+  "lightColor" : [ 60, 40, 110],  
+  "renderLayer" : "Player+1",
+  "timeToLive" : 0.4,
+  "power" : 0,
+  "speed" : 0,
+  "damageKindImage" : "/gunshop/bullet/icon.png",
+  "damageKind" : "electricplasma",
+  "fullbright" : true
+}

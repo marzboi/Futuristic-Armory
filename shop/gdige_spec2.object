@@ -1,0 +1,58 @@
+{
+  "objectName" : "gdige_spec2",
+  "colonyTags" : ["outpost","commerce"],
+  "rarity" : "Legendary",
+  "category" : "other",
+  "description" : "GDIGE's Spectre2",
+  "shortdescription" : "GDIGE's Spectre2",
+  "race" : "generic",
+
+  "apexDescription" : "A store. I will be sure to buy everything I need.",
+  "avianDescription" : "A handy store. Let's hope they sell what I want.",
+  "floranDescription" : "Floran can get goods in exchange for shiny pixelss.",
+  "glitchDescription" : "Interested. A merchant of some sort.",
+  "humanDescription" : "I hope they sell fizzy sodas.",
+  "hylotlDescription" : "A store. Perhaps I'll peruse its wares.",
+  "novakidDescription" : "Gonna buy me a sneaky bottle o' automato juice.",
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/merchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "GDIGE's Spectre2",
+        "subtitle" : " ^#b9b5b2;AWESOME"
+      }
+    },
+    "buyFactor" : 1.0,
+    "sellFactor" : 0.2,
+    "items" : [
+      { "item" : "gdige_DS-117" },
+      { "item" : "gdige_NV4" },	 
+      { "item" : "gdige_scar05" },	
+      { "item" : "gdige_F90-S" },
+      { "item" : "gdige_max41" },
+	  { "item" : "gdige_F5150" },
+      { "item" : "gdige_Morita" }	  	  
+    ]
+  },
+  "printable" : false,
+  "lightColor" : [150, 150, 200],
+  // Masking Fullbright Transparency Values: 0% brightness on lights, 75% brightness on posters in window, 70% on window
+
+
+  "inventoryIcon" : "gdige_spec2.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "gdige_spec2.png" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "collision" : "platform",
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

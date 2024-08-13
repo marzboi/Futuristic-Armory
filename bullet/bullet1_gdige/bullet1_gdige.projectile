@@ -1,0 +1,20 @@
+{
+  "projectileName" : "bullet1_gdige",
+  "image" : "bullet1_gdige.png",
+  "animationCycle" : 1.0,
+  "piercing" : false,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 2.0,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/bullet/bullet1.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 100,
+  "damageKind" : "default",
+  "fullbright" : true
+}

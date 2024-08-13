@@ -1,0 +1,16 @@
+{
+  "itemName" : "gruntback",
+  "price" : 2500,
+  "inventoryIcon" : "icons.png:back",
+  "rarity" : "Rare",
+  "category" : "backwear",
+  "description" : "A large decorative backpack with a strap to wear on your back.",
+  "shortdescription" : "grunt's pack",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+  "maxStack" : 1,
+
+  "acceptsAugmentType" : "back"
+}

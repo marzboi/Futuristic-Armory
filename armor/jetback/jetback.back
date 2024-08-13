@@ -1,0 +1,39 @@
+{
+  "itemName" : "jetback",
+  "price" : 1500,
+  "inventoryIcon" : "jetback.png",
+  "dropCollision" : [-4.0, -3.0, 4.0, 3.0],
+  "rarity" : "rare",
+  "description" : "Protects you from all heat, cold, proto-poison, electric storms and radiation. +25% to Fire, Ice and Radiation Resist.",
+  "shortdescription" : "Jetpack",
+  "tooltipKind" : "baseaugment",
+  "category" : "enviroProtectionPack",
+  
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+
+  "acceptsAugmentType" : "back",
+  "radioMessagesOnPickup" : [ "pickupepp" ],
+  
+  "statusEffects" : [
+    {
+      "stat" : "biomeheatImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomecoldImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomeradiationImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "breathProtection",
+      "amount" : 1.0
+    },
+	"headlamp"
+  ]
+  
+  
+}

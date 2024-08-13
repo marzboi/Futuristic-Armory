@@ -1,0 +1,34 @@
+{
+  "projectileName" : "gdige_max41_1",
+  "image" : "/bullet/icon.png",
+  "animationCycle" : 0.25,
+  "piercing" : true,
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "pointLight" : true,
+  "lightColor" : [150,230,127],  
+  "timeToLive" : 0.0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "bullet_gdige",
+      "inheritDamageFactor" : 1,
+      "directional" : "true"
+    },
+    {
+      "action" : "projectile",
+      "type" : "new_case",
+      "inheritDamageFactor" : 0,
+      "fuzzAngle" : 110,
+      "directional" : "true"
+    },
+    {
+      "action" : "sound",
+      "options" : ["/sfx/pr1.ogg", "/sfx/pr2.ogg", "/sfx/pr3.ogg", "/sfx/pr4.ogg", "/sfx/pr5.ogg", "/sfx/pr6.ogg"]
+    }
+  ],
+  "power" : 0,
+  "speed" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

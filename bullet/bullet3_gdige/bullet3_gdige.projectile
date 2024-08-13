@@ -1,0 +1,20 @@
+{
+  "projectileName" : "bullet3_gdige",
+  "image" : "bullet3_gdige.png",
+  "animationCycle" : 1.0,
+  "piercing" : false,
+  "bounces" : 0,
+  "frameNumber" : 20,
+  "renderLayer" : "Player+1",
+  "timeToLive" : 2.0,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/bullet/bullet3.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 100,
+  "damageKind" : "fire",
+  "fullbright" : true
+}

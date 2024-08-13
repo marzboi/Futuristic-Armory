@@ -1,0 +1,17 @@
+{
+  "frameGrid" : {
+    "size" : [100, 30],
+    "dimensions" : [10, 5],
+    "names" : [
+      ["default.1", null, null, null, null, null, null, null, null, null],
+      ["reload.1", "reload.2", "reload.3", null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null, null],
+      ["fastreload.1", "fastreload.2", "fastreload.3", "fastreload.4", "fastreload.5", "fastreload.6", "fastreload.7", "fastreload.8", "fastreload.9", "fastreload.10"],
+      ["fastreload.11", "fastreload.12", "fastreload.13", "fastreload.14", "fastreload.15", "fastreload.16", "fastreload.17", "fastreload.18", "fastreload.19", "fastreload.20"]
+	  
+    ]
+  },
+
+  "aliases" : {
+  }
+}

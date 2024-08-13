@@ -1,0 +1,16 @@
+{
+  "projectileName" : "new_case3",
+  "image" : "new_case.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "renderLayer" : "Player+1",
+  "physics" : "stickygrenade",
+  "piercing" : true,
+  "bounces" : -1,
+  "speed" : 0,
+  "timeToLive" : 1,
+  "damageKindImage" : "icon.png",
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

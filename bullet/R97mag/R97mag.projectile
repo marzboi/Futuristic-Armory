@@ -1,0 +1,24 @@
+{
+  "projectileName" : "R97mag",
+  "image" : "R97mag.png",
+  "animationCycle" : 0.25,
+  "physics" : "grenade",
+  "piercing" : true,
+  "flippable" : true,
+  "bounces" : 3,
+  "speed" : 10,
+  "renderLayer" : "Player+1",
+  "frameNumber" : 1,
+  "timeToLive" : 5,
+  "damageKindImage" : "icon.png",
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "R97mag2",
+      "fuzzAngle" : 360
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "projectileName" : "new_Cshell2",
+  "image" : "new_Cshell.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "renderLayer" : "Player+1",
+  "physics" : "grenade",
+  "piercing" : true,
+  "bounces" : 1,
+  "speed" : 10,
+  "timeToLive" : 1,
+  "damageKindImage" : "icon.png",
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "new_Cshell3",
+      "fuzzAngle" : 360
+    }
+  ]
+}

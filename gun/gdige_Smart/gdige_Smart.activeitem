@@ -1,0 +1,238 @@
+{
+  "itemName" : "gdige_Smart",
+  "price" : 4000,
+  "inventoryIcon" : "gdige_Smart.png:default.1",
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "level" : 7,
+  "shortdescription" : "^green;Smart pistol",
+  "category" : "^yellow;RMB : ^white;Reload",
+
+  "description" : "^yellow;9.89mm ^white;Smart Pistol Mk6
+^orange;Lastimosa Armory^white;
+Medium weight",
+
+  "itemTags" : ["weapon","ranged","supply"],
+  "twoHanded" : true,
+
+  "animation" : "gdige_Smart.animation",
+  "animationParts" : {
+    "middle" : "gdige_Smart.png",
+    "middle2" : "gdige_Smartfullbright.png",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+  },
+
+  "baseOffset" : [0.95, 0.45],
+  "muzzleOffset" : [-2.1, 0.5],
+
+  "scripts" : ["/gun/normal.lua"],
+
+  "elementalType" : "electric",
+
+  "primaryAbility" : {
+    "scripts" : ["/gun/gunshopgunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.210,
+    "baseDps" : 16,
+    "energyUsage" : 42,
+    "inaccuracy" : 0.00,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "gdige_Smart_1",
+    "projectileParameters" : {
+      "speed" : 75
+    },
+        "stances" : {
+      "idle" : {
+        "armRotation" : 20,
+        "weaponRotation" : -20,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "jump.3"
+      },
+      "fire" : {
+        "duration" : 0.0,
+        "armRotation" : 20,
+        "weaponRotation" : -20,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "animationStates" : {
+          "body" : "reload"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "jump.3"
+      },
+      "motion1" : {
+        "duration" : 0.12,
+        "armRotation" : 20,
+        "weaponRotation" : -20,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "jump.3",
+		"recoil" : true
+      },
+      "motion2" : {
+      },
+      "motion3" : {
+      },
+      "motion4" : {
+      },
+      "motion5" : {
+      },
+      "motion6" : {
+      },
+      "cooldown" : {
+        "duration" : 0.08,
+        "armRotation" : 25,
+        "weaponRotation" : -5,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "jump.3"
+      }
+    }
+  },
+
+  "altAbility" : {
+    "scripts" : ["/gun/gunshopaltfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.08,
+    "baseDps" : 1,
+    "energyUsage" : 0,
+    "inaccuracy" : 0.01,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "Smart_fastreload_1",
+    "projectileParameters" : {
+      "speed" : 20
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 20,
+        "weaponRotation" : -20,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "jump.3"
+      },
+      "fire" : {
+        "duration" : 0.0,
+        "armRotation" : 20,
+        "weaponRotation" : 15,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "animationStates" : {
+          "body" : "fastreload"
+        },
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "run.1",
+        "backArmFrame" : "rotation"
+      },
+      "motion1" : {
+        "duration" : 0.2,
+        "armRotation" : 20,
+        "weaponRotation" : -20,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.3",
+        "backArmFrame" : "jump.3"
+      },
+      "motion2" : {
+        "duration" : 0.2,
+        "armRotation" : 20,
+        "weaponRotation" : 5,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "swim.5",
+        "backArmFrame" : "jump.3"
+      },
+      "motion3" : {
+        "duration" : 0.5,
+        "armRotation" : 20,
+        "weaponRotation" : 15,
+        "weaponRotationCenter" : [-0.5, 0.0],
+        "weaponOffset" : [-0.2, 0.4],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "run.1",
+        "backArmFrame" : "rotation"
+      },
+      "motion4" : {
+      },
+      "motion5" : {
+      },
+      "motion6" : {
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 20,
+        "weaponRotation" : 15,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "rotation",
+        "backArmFrame" : "jump.3"
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,35 @@
+{
+  "projectileName" : "gdigeload",
+  "physics" : "laser",
+  "timeToLive" : 0.2,
+  "image" : "gdigeload.png",
+  "animationCycle" : 0.1,
+  "frameNumber" : 1,
+  "windupFrames" : 1,
+  "winddownFrames" : 1,
+  "periodicActions" : [
+    {
+      "time" : 9.7,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : []
+    }
+  ],
+  "actionOnReap" : [],
+  "speed" : 0,
+  "power" : 0,
+
+  "onlyHitTerrain" : true,
+  "persistentStatusEffects" : ["reloadeffect"],
+  "statusEffectArea" : [ [-6.0, 0], [-4.0, -4.0], [0, -6.0], [4.0, -4.0], [6.0, 0], [4.0, 4.0], [0, 6.0], [-4.0, 4.0] ],
+
+  "renderLayer" : "Player+1",
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "emitters" : [],
+
+  "piercing" : true,
+  "bounces" : -1,
+
+  "scripts" : ["/projectiles/activeitems/staff/staffprojectile.lua"]
+}
