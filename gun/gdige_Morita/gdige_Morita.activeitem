@@ -5,6 +5,8 @@
   "maxStack" : 1,
   "rarity" : "legendary",
   "level" : 7,
+  "totalAmmo": 50,
+  "ammoPerShoot": 1,
   "shortdescription" : "^green;Morita Carbine",
   "category" : "^yellow;RMB : ^white;Reload",
 

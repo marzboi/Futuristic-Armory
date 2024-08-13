@@ -5,6 +5,8 @@
   "maxStack" : 1,
   "rarity" : "legendary",
   "level" : 7,
+  "totalAmmo": 30,
+  "ammoPerShoot": 1,
   "shortdescription" : "^green;Fatal-5150",
   "category" : "^yellow;RMB : ^white;Reload",
 

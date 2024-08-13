@@ -5,6 +5,8 @@
   "maxStack" : 1,
   "rarity" : "rare",
   "level" : 7,
+  "totalAmmo": 12,
+  "ammoPerShoot": 1,
   "shortdescription" : "^green;Smart pistol",
   "category" : "^yellow;RMB : ^white;Reload",
 

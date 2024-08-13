@@ -5,6 +5,8 @@
   "maxStack" : 1,
   "rarity" : "rare",
   "level" : 7,
+  "totalAmmo": 35,
+  "ammoPerShoot": 1,
   "shortdescription" : "^green;F90-Special Rifle",
   "category" : "^yellow;RMB : ^white;Reload",
 

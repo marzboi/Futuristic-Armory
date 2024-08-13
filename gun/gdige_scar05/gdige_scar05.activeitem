@@ -5,6 +5,8 @@
   "maxStack" : 1,
   "rarity" : "uncommon",
   "level" : 7,
+  "totalAmmo": 20,
+  "ammoPerShoot": 1,
   "shortdescription" : "^green;SCAR-ZTA05",
   "category" : "^yellow;RMB : ^white;Reload",
 

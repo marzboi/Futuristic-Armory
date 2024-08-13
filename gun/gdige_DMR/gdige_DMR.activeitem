@@ -5,6 +5,8 @@
   "maxStack" : 1,
   "rarity" : "uncommon",
   "level" : 7,
+  "totalAmmo": 15,
+  "ammoPerShoot": 1,
   "shortdescription" : "^green;D-101 Longbow DMR",
   "category" : "^yellow;RMB : ^white;Reload",
 
