@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "common",
   "level" : 7,
-  "totalAmmo": 10,
+  "totalAmmo": 8,
   "ammoPerShoot": 1,
   "shortdescription" : "^green;DS-117 Shotgun",
   "category" : "^yellow;RMB : ^white;Reload",

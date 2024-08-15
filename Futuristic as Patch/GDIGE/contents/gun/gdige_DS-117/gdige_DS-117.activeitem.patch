@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/totalAmmo",
+    "value": 10
+  },
+  {
+    "op": "add",
+    "path": "/ammoPerShoot",
+    "value": 1
+  }
+]

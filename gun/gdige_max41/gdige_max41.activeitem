@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "legendary",
   "level" : 7,
-  "totalAmmo": 40,
+  "totalAmmo": 50,
   "ammoPerShoot": 1,
   "shortdescription" : "^green;MAX-41A Submachine Gun",
   "category" : "^yellow;RMB : ^white;Reload",
