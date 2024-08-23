@@ -7,7 +7,7 @@ GunFire = WeaponAbility:new()
 function GunFire:init()
   self.weapon:setStance(self.stances.idle)
 
-  self.cooldownTimer = self.fireTime
+  self.cooldownTimer = 0
 
   self.maxAmmo = config.getParameter("totalAmmo")
   self.ammoPerShoot = config.getParameter("ammoPerShoot")

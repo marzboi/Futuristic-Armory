@@ -7,7 +7,7 @@ GunFire = WeaponAbility:new()
 function GunFire:init()
   self.weapon:setStance(self.stances.idle)
 
-  self.cooldownTimer = self.fireTime
+  self.cooldownTimer = 0
 
   self.maxAmmo = config.getParameter("totalAmmo")
 
@@ -28,6 +28,7 @@ function GunFire:update(dt, fireMode, shiftHeld)
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
     and not self.weapon.currentAbility
     and self.cooldownTimer == 0
+    and storage.totalAmmo < self.maxAmmo
     and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
     if self.fireType == "auto" then
