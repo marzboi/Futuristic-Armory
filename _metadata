@@ -1,7 +1,7 @@
 {
   "author" : "Marz",
   "description" : "I have taken the time to tweak this great mod made by GDIGE using Gunners Code by Ravy, and make it use an ammo counter\n\n- It will now use an Ammo Counter rather than energy, shots will not consume energy so you can use techs and you must reload in order to replenish your ammo.\n\nTo Do.\n\n- An UI that displays your ammunition left\n- Proper tags so the weapons can scale with mods like RPG Growth.\n- Research ammo capacity to be lore accurate to the source material.\n\nPlease let me know if you encounter any bug!\n\nCredits to https://next.nexusmods.com/profile/GDIGE\n\nI will be patching Gunners Mod and FFS by Ravy to use similar Ammo System, stay tuned!",
-  "friendlyName" : "Futuristic Armory - Ammo Counter and Reload Patch",
+  "friendlyName" : "Futuristic Armory - Ammo and Reload System Patch",
   "includes" : [],
   "link" : "steam://url/CommunityFilePage/3309722414",
   "name" : "Futuristic Armory",

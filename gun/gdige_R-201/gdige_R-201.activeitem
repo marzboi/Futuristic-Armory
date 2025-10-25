@@ -6,7 +6,6 @@
   "rarity" : "uncommon",
   "level" : 7,
   "totalAmmo": 24,
-  "ammoPerShoot": 1,
   "shortdescription" : "^green;R-201 Assault Rifle",
   "category" : "^yellow;RMB : ^white;Reload",
 

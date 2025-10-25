@@ -1,0 +1,22 @@
+{
+  "Lua.runtime.version": "Lua 5.1",
+  "Lua.workspace.checkThirdParty": false,
+
+  // Tell Lua LS these are real globals provided by Starbound
+  "Lua.diagnostics.globals": [
+    "storage",
+    "config",
+    "animator",
+    "status",
+    "world",
+    "mcontroller",
+    "activeItem",
+    "sb",
+    "vec2",
+    "util",
+    "WeaponAbility"
+  ],
+
+  // Stop complaining about class-style redefinitions like GunFire:init(), draw(), etc.
+  "Lua.diagnostics.disable": ["duplicate-set-field", "undefined-global"]
+}

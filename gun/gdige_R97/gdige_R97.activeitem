@@ -6,7 +6,6 @@
   "rarity" : "common",
   "level" : 7,
   "totalAmmo": 40,
-  "ammoPerShoot": 1,
   "shortdescription" : "^green;R97-CH Submachine Gun",
   "category" : "^yellow;RMB : ^white;Reload",
 

@@ -10,22 +10,16 @@ function GunFire:init()
   self.cooldownTimer = 0
 
   self.maxAmmo = config.getParameter("totalAmmo")
-  self.ammoPerShoot = config.getParameter("ammoPerShoot")
 
   if not storage.totalAmmo then
     storage.totalAmmo = self.maxAmmo
   end
-
-  self.totalAmmo = storage.totalAmmo
-
   self.weapon.onLeaveAbility = function()
     self.weapon:setStance(self.stances.idle)
   end
 end
 
 function GunFire:update(dt, fireMode, shiftHeld)
-  self.totalAmmo = storage.totalAmmo
-
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
@@ -35,12 +29,11 @@ function GunFire:update(dt, fireMode, shiftHeld)
   end
 
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
-    and not self.weapon.currentAbility
-    and self.cooldownTimer == 0
-    and not world.lineTileCollision(mcontroller.position(), self:firePosition())
-    and self.totalAmmo > 0 then
-
-    if self.fireType == "auto" and self:consumeAmmo() then
+      and not self.weapon.currentAbility
+      and self.cooldownTimer == 0
+      and not world.lineTileCollision(mcontroller.position(), self:firePosition())
+      and storage.totalAmmo > 0 then
+    if self.fireType == "auto" and storage.totalAmmo >= 1 then
       self:setState(self.auto)
     end
   end
@@ -50,6 +43,7 @@ function GunFire:auto()
   self.weapon:setStance(self.stances.fire)
 
   self:fireProjectile()
+  self:consumeAmmo()
   self:muzzleFlash()
 
   if self.stances.fire.duration then
@@ -129,8 +123,10 @@ function GunFire:burst()
     self:muzzleFlash()
     shots = shots - 1
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.armRotation))
+    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0,
+      self.stances.fire.weaponRotation))
+    self.weapon.relativeArmRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0,
+      self.stances.fire.armRotation))
 
     util.wait(self.burstTime)
   end
@@ -144,12 +140,14 @@ function GunFire:cooldown()
 
   local progress = 0
   util.wait(self.stances.cooldown.duration, function()
-    local from = self.stances.cooldown.weaponOffset or {0,0}
-    local to = self.stances.idle.weaponOffset or {0,0}
-    self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+    local from = self.stances.cooldown.weaponOffset or { 0, 0 }
+    local to = self.stances.idle.weaponOffset or { 0, 0 }
+    self.weapon.weaponOffset = { interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2]) }
 
-    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.weaponRotation, self.stances.idle.weaponRotation))
-    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.armRotation, self.stances.idle.armRotation))
+    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.weaponRotation,
+      self.stances.idle.weaponRotation))
+    self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.cooldown.armRotation,
+      self.stances.idle.armRotation))
 
     progress = math.min(1.0, progress + (self.dt / self.stances.cooldown.duration))
   end)
@@ -184,13 +182,13 @@ function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, fi
     end
 
     projectileId = world.spawnProjectile(
-        projectileType,
-        firePosition or self:firePosition(),
-        activeItem.ownerEntityId(),
-        self:aimVector(inaccuracy or self.inaccuracy),
-        false,
-        params
-      )
+      projectileType,
+      firePosition or self:firePosition(),
+      activeItem.ownerEntityId(),
+      self:aimVector(inaccuracy or self.inaccuracy),
+      false,
+      params
+    )
   end
   return projectileId
 end
@@ -200,23 +198,18 @@ function GunFire:firePosition()
 end
 
 function GunFire:aimVector(inaccuracy)
-  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
+  local aimVector = vec2.rotate({ 1, 0 }, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
 end
 
 function GunFire:consumeAmmo()
-  if storage.totalAmmo >= self.ammoPerShoot then
-    storage.totalAmmo = storage.totalAmmo - self.ammoPerShoot
-    self.totalAmmo = storage.totalAmmo
-    return true
-  else
-    return false
-  end
+  storage.totalAmmo = storage.totalAmmo - 1
 end
 
 function GunFire:damagePerShot()
-  return (self.baseDamage or (self.baseDps * self.fireTime)) * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
+  return (self.baseDamage or (self.baseDps * self.fireTime)) * (self.baseDamageMultiplier or 1.0) *
+      config.getParameter("damageLevelMultiplier") / self.projectileCount
 end
 
 function GunFire:uninit()

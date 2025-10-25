@@ -6,7 +6,6 @@
   "rarity" : "uncommon",
   "level" : 7,
   "totalAmmo": 30,
-  "ammoPerShoot": 1,
   "shortdescription" : "^green;NV-4 ASSAULT RIFLE",
   "category" : "^yellow;RMB : ^white;Reload",
 

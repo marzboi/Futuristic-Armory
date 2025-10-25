@@ -6,7 +6,6 @@
   "rarity" : "uncommon",
   "level" : 7,
   "totalAmmo": 30,
-  "ammoPerShoot": 1,
   "shortdescription" : "^green;C.A.R.II SMG",
   "category" : "^yellow;RMB : ^white;Reload",
 
