@@ -28,11 +28,7 @@ function GunFire:update(dt, fireMode, shiftHeld)
     animator.setLightActive("muzzleFlash", false)
   end
 
-  if self.fireMode == (self.activatingFireMode or self.abilitySlot)
-      and not self.weapon.currentAbility
-      and self.cooldownTimer == 0
-      and not world.lineTileCollision(mcontroller.position(), self:firePosition())
-      and storage.totalAmmo > 0 then
+  if self.fireMode == (self.activatingFireMode or self.abilitySlot) and not self.weapon.currentAbility and self.cooldownTimer == 0 and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
     if self.fireType == "auto" and storage.totalAmmo >= 1 then
       self:setState(self.auto)
     end
